@@ -5,6 +5,18 @@ ThingsBoard is an open-source IoT platform for data collection, processing, visu
 
 <img src="./img/logo.png?raw=true" width="100" height="100">
 
+## Docker compose local - Yatharth
+
+```bash
+cd docker
+
+## Update DB
+docker-compose -f docker-compose-custom.yml run --rm -e INSTALL_TB=true -e LOAD_DEMO=true thingsboard-ce
+
+## Run thingsboard
+docker-compose -f docker-compose-custom.yml up
+```
+
 
 ## Documentation
 
